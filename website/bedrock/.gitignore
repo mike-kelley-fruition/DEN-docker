@@ -1,0 +1,64 @@
+# Application
+!web/app/plugins/.gitkeep
+web/app/upgrade
+web/app/uploads/*
+web/app/themes/twentytwentyone/
+
+# WordPress
+web/wp/
+web/wp/*
+
+
+# Logs
+*.log
+
+phpcs.xml
+# Composer
+/vendor
+
+# WP-CLI
+wp-cli.local.yml
+
+# IDE
+.DS_Store
+.idea
+
+#NPM
+web/app/themes/frutheme/node_modules*
+web/app/themes/dist*
+web/app/themes/frutheme/dist*
+
+# Plugins
+web/app/plugins/wordpress-seo
+web/app/mu-plugins/advanced-custom-fields-pro
+web/app/plugins/gravityforms
+web/app/plugins/wp-migrate-db-pro
+web/app/plugins/wp-rocket
+web/app/plugins/wp-mail-smtp
+web/app/plugins/redirection
+web/app/plugins/imagify
+web/app/plugins/duplicate-page
+web/app/plugins/wp-importer
+web/app/plugins/woocommerce
+web/app/plugins/better-wp-security
+web/app/plugins/advanced-custom-fields-font-awesome
+web/app/mu-plugins/kinsta-mu-plugins
+web/app/plugins/woocommerce-gateway-stripe
+web/app/plugins/added-to-cart-popup-woocommerce
+web/app/plugins/fakerpress
+
+
+#Cache
+web/app/cache
+web/app/wp-rocket-config
+
+# env
+.env
+
+# DBs
+*.sql.gz
+*.sql.DS_Store
+.sql
+
+#buddy updates
+~./ssh

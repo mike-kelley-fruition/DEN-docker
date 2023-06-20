@@ -1,0 +1,63 @@
+{
+  "name": "Wordpress-Starter",
+  "author": "",
+  "version": "1.0.0",
+  "description": "Wordpress Starter",
+  "private": true,
+  "engines": {
+    "node": "~16",
+    "npm": "~8"
+  },
+  "dependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/register": "^7.21.0",
+    "aos": "^2.3.4",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^9.1.2",
+    "browser-sync": "^2.29.1",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "css-vars-ponyfill": "^2.4.8",
+    "cssnano": "^6.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^6.2.0",
+    "import-glob-loader": "^1.1.0",
+    "jquery-multiselect": "^1.0.0",
+    "multiple-select": "^1.5.2",
+    "node-sass": "^8.0.0",
+    "owl.carousel": "^2.3.4",
+    "postcss-loader": "^7.2.4",
+    "postcss-nested": "^6.0.1",
+    "postcss-normalize": "^10.0.1",
+    "precss": "^3.1.2",
+    "request": "^2.88.2",
+    "style-loader": "^3.3.2",
+    "url-loader": "^4.1.1",
+    "vue-loader": "^17.0.1",
+    "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "html-minimizer-webpack-plugin": "^4.3.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "minify-html-webpack-plugin": "^1.1.7",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "sass": "^1.61.0",
+    "sass-loader": "^13.2.2",
+    "webpack": "^5.78.0",
+    "webpack-watch-files-plugin": "^1.2.1"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "dev": "NODE_ENV=development webpack --watch"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  }
+}

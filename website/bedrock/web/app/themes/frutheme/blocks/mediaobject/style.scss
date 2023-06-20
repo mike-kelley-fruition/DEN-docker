@@ -1,0 +1,54 @@
+@import "./assets/css/variables";
+
+.mediaFluid{
+  overflow: hidden;
+  padding-top:100px;
+  padding-bottom:100px;
+
+  h2{
+    margin-top:0px;
+  }
+
+  .mainCTA{
+    margin-top:40px;
+  }
+  .flex-img{
+    border-radius: 8px;
+  }
+}
+
+.mediaFluid.Gray{
+  background-color: $gray50;
+}
+
+.imageLeft{
+  padding-right:80px;
+}
+.imageRight{
+  padding-left:80px;
+}
+
+@media screen and (max-width: 991px) {
+  .imageLeft {
+    padding-right: 15px;
+  }
+  .imageRight {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .imageRight{
+    margin-left:inherit;
+  }
+  .mediaFluid{
+    padding-top:61px;
+    padding-bottom:41px;
+  }
+  .mediaFullImage{
+    height:250px;
+  }
+  .mediaFullWrap{
+    margin:0px;
+  }
+}

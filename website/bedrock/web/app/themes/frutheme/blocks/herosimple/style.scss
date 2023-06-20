@@ -1,0 +1,36 @@
+@import "./assets/css/variables";
+
+
+.heroSimple{
+    padding-top:100px;
+    padding-bottom:100px;
+    background-color: $primaryFirst100;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+    h1{
+        color: $gray0;
+        font-size: 48px;
+        margin:0px;
+    }
+}
+
+.centerHero{
+    text-align: center;
+}
+.heroCover{
+    background: $primaryFirst100;
+    opacity: 0.5;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+@media screen and (max-width: 767px){
+    .heroSimple h1{
+        font-size: 30px;
+    }
+}

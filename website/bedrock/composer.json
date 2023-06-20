@@ -1,0 +1,130 @@
+{
+  "name": "fruition/frutheme",
+  "type": "project",
+  "license": "MIT",
+  "description": "Fruition Bedrock Starter Theme",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://composer.fruition.net/"
+    },
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    },
+    {
+      "type":"composer",
+      "url":"https://composer.deliciousbrains.com"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "gravityforms/gravityforms",
+        "version": "dev-master",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://www.gravityhelp.com/wp-content/plugins/gravitymanager/api.php?op=get_plugin&slug=gravityforms&key={%WP_PLUGIN_GF_KEY}"
+        },
+        "require": {
+          "composer/installers": "^1.4",
+          "gotoandplay/gravityforms-composer-installer": "^2.3"
+        }
+      }
+    },
+    {
+      "type": "composer",
+      "url": "https://pivvenit.github.io/acf-composer-bridge/composer/v3/wordpress-muplugin/"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "composer/installers": "^1.12",
+    "mcaskill/sage-theme-wrapper": "^8.5",
+    "oscarotero/env": "^2.1",
+    "roots/bedrock-autoloader": "^1.0",
+    "roots/bedrock-disallow-indexing": "^2.0",
+    "roots/wordpress": "*",
+    "roots/wp-config": "1.0.0",
+    "roots/wp-password-bcrypt": "1.0.0",
+    "vlucas/phpdotenv": "^5.3",
+    "wpackagist-plugin/better-wp-security": "*",
+    "wpackagist-plugin/imagify": "*",
+    "wpackagist-plugin/wp-importer": "*",
+    "wpackagist-plugin/wp-mail-smtp": "*",
+    "yoast/wordpress-seo": "*"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.6.0",
+    "roave/security-advisories": "dev-latest"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "post-update-cmd": "find ./web/ -name '.git' -type d -exec rm -rf '{}' +",
+    "post-install-cmd": "find ./web/ -name '.git' -type d -exec rm -rf '{}' +"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "platform": {
+      "ext-apcu": "1",
+      "ext-bcmath": "1",
+      "ext-ctype": "1",
+      "ext-curl": "1",
+      "ext-date": "1",
+      "ext-dom": "1",
+      "ext-exif": "1",
+      "ext-fileinfo": "1",
+      "ext-filter": "1",
+      "ext-ftp": "1",
+      "ext-gd": "1",
+      "ext-hash": "1",
+      "ext-iconv": "1",
+      "ext-json": "1",
+      "ext-libxml": "1",
+      "ext-mbstring": "1",
+      "ext-mysqli": "1",
+      "ext-mysqlnd": "1",
+      "ext-openssl": "1",
+      "ext-pcntl": "1",
+      "ext-pcre": "1",
+      "ext-pdo_mysql": "1",
+      "ext-pdo_sqlite": "1",
+      "ext-posix": "1",
+      "ext-readline": "1",
+      "ext-session": "1",
+      "ext-sodium": "1",
+      "ext-sqlite3": "1",
+      "ext-standard": "1",
+      "ext-tokenizer": "1",
+      "ext-xml": "1",
+      "ext-xmlreader": "1",
+      "ext-xmlwriter": "1",
+      "ext-zip": "1",
+      "ext-zlib": "1",
+      "php": "8.0"
+    },
+    "allow-plugins": {
+      "pivvenit/acf-pro-installer": true,
+      "ffraenz/private-composer-installer": true,
+      "gotoandplay/gravityforms-composer-installer": true,
+      "composer/installers": true,
+      "roots/wordpress-core-installer": true
+    }
+  }
+}

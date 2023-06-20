@@ -1,0 +1,23 @@
+@import "./assets/css/variables";
+
+.iconBannerFluid{
+  padding-top:30px;
+  padding-bottom:40px;
+  h2{
+    text-align: center;
+    margin-bottom:0px;
+  }
+  .logoImage{
+    height:80px;
+    width:auto;
+    margin:0px auto;
+  }
+}
+
+.iconBannerFluid.Dark{
+  background-color:$primary;
+
+  h2{
+    color:#fff;
+  }
+}

@@ -1,0 +1,26 @@
+.edit-account{
+  input{padding:15px;border-radius:3px;border:1px solid;font-size:16px;margin-bottom:20px;}
+  //.select2-container .select2-selection--single{height:49px !important;padding:15px !important;}
+  label{font-size:14px; text-transform: uppercase;font-weight:600;}
+  select{font-size:16px;}
+  textarea{padding:15px;border-radius:3px;border:1px solid;font-size:16px;margin-bottom:20px;}
+  .form-row{margin-bottom:20px;}
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+    font-size:16px;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+    font-size:16px;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+    font-size:16px;
+  }
+  fieldset{
+    margin-top:20px !important;
+  }
+}

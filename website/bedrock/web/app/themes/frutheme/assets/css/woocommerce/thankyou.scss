@@ -1,0 +1,98 @@
+.woocommerce ul.order_details{
+  margin: 0 0 100px;
+  list-style: none;
+  padding-left: 0px;
+  li {
+    float: left;
+    margin-right: 2em;
+    text-transform: uppercase;
+    font-size: .715em;
+    line-height: 1;
+    border-right: 1px dashed #d3ced2;
+    padding-right: 2em;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+
+    strong{
+      display: block;
+      font-size: 1.4em;
+      text-transform: none;
+      line-height: 1.5;
+    }
+  }
+}
+
+
+
+
+
+.woocommerce-table--order-details{
+  border:none;
+  width:100%;
+  tr{
+    position: relative;
+    &:after{
+      content:"";
+      position: absolute;
+      height:1px;
+      width:100%;
+      background-color:#e7e7e7;
+      left:0px;
+    }
+  }
+  td{
+    border:none !important;
+    text-align: left;
+    padding:15px 0px;
+  }
+  th{
+    vertical-align: top !important;
+    padding:15px 0px;
+    text-align:left;
+  }
+  .woocommerce-shipping-destination{
+    margin:3px 0px;
+  }
+  .order-total{
+    th{
+      font-size:24px;
+    }
+    span{
+      font-size:24px;
+    }
+  }
+  .woocommerce-shipping-calculator{
+    margin-top:10px;
+  }
+  .product-name td{
+
+  }
+}
+
+
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+  float: left;
+  width: 48%;
+}
+
+.woocommerce-order-details{
+  border: 1px solid #e8e8ed;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background: #fff;
+  max-width: 600px;
+}
+
+
+.woocommerce .woocommerce-customer-details address {
+  font-style: normal;
+  margin-bottom: 0;
+  border: 1px solid rgba(0,0,0,.1);
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  text-align: left;
+  width: 100%;
+  border-radius: 5px;
+  padding: 6px 12px;
+}

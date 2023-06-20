@@ -1,0 +1,70 @@
+@import "./assets/css/variables";
+
+.heroHomeFluid{
+    padding-top:100px;
+    padding-bottom:100px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    h1{
+        color: $gray0;
+        font-size: 52px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    p{
+        color: $gray0;
+        line-height: 160%;
+        font-size: 18px;
+        margin-top: 0px;
+    }
+    .mainCTA{
+        display: inline-block;
+        margin: 10px 3px;
+    }
+}
+
+
+.heroLeft{
+    width: 50%;
+}
+.heroCenter{
+    max-width:650px;
+    text-align: center;
+    margin:0px auto;
+}
+.overHero{
+    background: $primaryFirst100;
+    opacity:0.5;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+
+@media screen and (max-width: 991px) {
+    .heroLeft{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .heroHomeFluid {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        h1{
+            font-size:30px;
+        }
+    }
+    .heroCenter{
+        width: 100%;
+        text-align: left;
+    }
+    .heroLeft{
+        width: 100%;
+    }
+}

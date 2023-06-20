@@ -1,0 +1,54 @@
+@import "./assets/css/variables";
+
+.heroRightFluid{
+    h1{
+        color: $primaryFirst100;
+        font-size: 48px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    p{
+        color: $primaryFirst100;
+        line-height: 160%;
+        font-size: 18px;
+        margin-top: 0px;
+    }
+    .mainCTA{
+        display: inline-block;
+        margin: 10px 3px;
+    }
+}
+
+.heroRight{
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+.heroRightCopy{
+    max-width:650px;
+    padding-right:100px;
+    margin-left: auto;
+    padding-left: 40px;
+}
+
+
+
+@media screen and (max-width: 991px) {
+
+    .heroRightCopy{
+        max-width:100%;
+        padding:30px;
+    }
+
+    .heroRight{
+        min-height: 300px;
+    }
+
+    .heroRightFluid {
+        h1{
+            font-size:30px;
+            margin-top:0px;
+        }
+    }
+}
